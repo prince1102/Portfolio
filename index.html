@@ -3,14 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>PrinceBharti | Portfolio</title>
+    <title>Prince Bharti | Portfolio</title>
 
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
 
     <!-- Devicon -->
@@ -19,21 +17,19 @@
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <!-- Header / Navigation -->
+    <!-- ===== HEADER ===== -->
     <header>
-      <nav class="container" role="navigation" aria-label="Main navigation">
+      <nav class="container">
         <h3 class="brand">🚀 Prince Bharti</h3>
 
-        <!-- Hamburger for mobile -->
-        <button class="hamburger" aria-label="Open navigation">
+        <button class="hamburger">
           <i class="fa-solid fa-bars"></i>
         </button>
 
-        <!-- Nav links (includes theme button as last item) -->
         <div class="nav-links" id="navLinks">
           <a href="#cover">🏠 Home</a>
           <a href="#about">🙋 About</a>
@@ -41,8 +37,7 @@
           <a href="#work">💼 Projects</a>
           <a href="#contact">📞 Contact</a>
 
-          <!-- THEME TOGGLE placed after Contact -->
-          <button id="themeBtn" class="theme-btn" aria-label="Toggle theme">
+          <button id="themeBtn" class="theme-btn">
             <i id="themeIcon" class="fa-solid fa-moon"></i>
             <span class="theme-text">Night</span>
           </button>
@@ -50,62 +45,64 @@
       </nav>
     </header>
 
-    <!-- Hero -->
+    <!-- ===== HERO ===== -->
     <section id="cover">
       <div id="header" class="container">
         <div id="intro">
           <h1>👋 Hi,</h1>
           <h1>I am <span>Prince Bharti</span></h1>
           <h1>💻 MERN Full Stack Developer</h1>
+
           <p class="tagline" id="typedTagline"></p>
+
           <a href="#contact" class="hire_btn">🔥 Hire Me</a>
 
-          <div id="social_medialink" style="margin-top: 12px">
-            <a
-              href="https://www.linkedin.com/in/prince-bharti-8ba534397/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-            <a
-              href="https://github.com/prince1102"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-            <a href="mailto:princebhartip11@gmail.com" aria-label="Email"
-              ><i class="fa-solid fa-envelope"></i
-            ></a>
+          <!-- SOCIAL -->
+          <div id="social_medialink">
+            <a href="https://www.linkedin.com/in/prince-bharti-8ba534397/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/prince1102" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.facebook.com/share/1DP53PwcAi/" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/dailyvlog_with_prince" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="mailto:princebhartip11@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
           </div>
         </div>
 
         <div id="devloper_img">
-          <img src="./images/WhatsApp Image 2026-03-21 at 00.27.52.jpeg" alt="Profile Image" />
+          <img src="./images/profile.jpeg" alt="Profile Image" />
         </div>
       </div>
     </section>
 
-    <!-- About -->
+    <!-- ===== ABOUT ===== -->
     <section id="about" class="fade-in">
       <div class="container">
         <h3>🙋 About Me</h3>
         <div id="about_details">
-          <img src="./images/about_image.png" alt="About Image" />
+          <img src="./images/about_image.png" />
           <div id="about_info">
             <p>
-              👨‍💻 I am a self-taught developer with hands-on experience in
-              Node.js, Express.js, and MongoDB. I create secure authentication
-              systems and REST APIs.
+              👨‍💻 I am a MERN stack developer skilled in Node.js, Express.js,
+              and MongoDB. I build secure APIs, authentication systems, and
+              scalable web apps.
             </p>
+
             <div id="skill_list">
               <h4>🛠 My Expertise</h4>
               <ul>
                 <li>Frontend Development</li>
                 <li>Backend Development</li>
-                <li>Database Management</li>
-                <li>MERN Stack Development</li>
+                <li>REST APIs</li>
+                <li>MERN Stack</li>
               </ul>
             </div>
           </div>
@@ -113,191 +110,132 @@
       </div>
     </section>
 
-    <!-- Skills -->
+    <!-- ===== SKILLS ===== -->
     <section id="skills_area" class="fade-in">
       <div class="container">
         <h3>⚡ Skills</h3>
+
         <div class="skills_grid">
-          <div class="skills_box">
-            <i class="fa-brands fa-html5"></i>
-            <p>HTML</p>
-          </div>
-          <div class="skills_box">
-            <i class="fa-brands fa-css3-alt"></i>
-            <p>CSS</p>
-          </div>
-          <div class="skills_box">
-            <i class="fa-brands fa-square-js"></i>
-            <p>JavaScript</p>
-          </div>
-          <div class="skills_box">
-            <i class="fa-brands fa-node-js"></i>
-            <p>Node.js</p>
-          </div>
-          <div class="skills_box">
-            <i class="devicon-express-original"></i>
-            <p>Express.js</p>
-          </div>
-          <div class="skills_box">
-            <i class="devicon-mongodb-plain"></i>
-            <p>MongoDB</p>
-          </div>
-          <div class="skills_box">
-            <i class="fa-brands fa-github"></i>
-            <p>GitHub</p>
-          </div>
+          <div class="skills_box"><i class="fa-brands fa-html5"></i><p>HTML</p></div>
+          <div class="skills_box"><i class="fa-brands fa-css3-alt"></i><p>CSS</p></div>
+          <div class="skills_box"><i class="fa-brands fa-js"></i><p>JavaScript</p></div>
+          <div class="skills_box"><i class="fa-brands fa-node-js"></i><p>Node.js</p></div>
+          <div class="skills_box"><i class="devicon-express-original"></i><p>Express</p></div>
+          <div class="skills_box"><i class="devicon-mongodb-plain"></i><p>MongoDB</p></div>
+          <div class="skills_box"><i class="fa-brands fa-github"></i><p>GitHub</p></div>
         </div>
       </div>
     </section>
 
-    <!-- Work / Projects -->
+    <!-- ===== PROJECTS ===== -->
     <section id="work" class="fade-in">
       <div class="container">
         <h3>💼 My Projects</h3>
+
         <div id="work_list">
+
+          <!-- URL SHORTENER -->
           <div class="work_card">
-            <img
-              src="./images/url_icons8-shorten-urls-480.png"
-              alt="URL Shortener"
-            />
-            <div class="work_card_info">
+            <img src="./images/url_icons8-shorten-urls-480.png" />
+            <div>
               <h4>🔗 URL Shortener</h4>
-              <p>
-                Shorten long URLs easily with Node.js + MongoDB + EJS templates.
-              </p>
-              <a
-                class="view_btn"
-                href="https://url-shortner-project-y37k.onrender.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <p>Shorten URLs with Node.js + MongoDB</p>
+              <a class="view_btn" href="https://url-shortner-project-olq7.onrender.com/" target="_blank">
                 View Project
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
           </div>
 
+          <!-- IMAGE UPLOADER -->
           <div class="work_card">
-            <img src="./images/iuploaderpimage.png" alt="Image Uploader" />
-            <div class="work_card_info">
+            <img src="./images/iuploaderpimage.png" />
+            <div>
               <h4>🖼 Image Uploader</h4>
-              <p>Upload and store images securely using Multer & Cloudinary.</p>
-              <a
-                class="view_btn"
-                href="https://image-uploader-iaay.onrender.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <p>Upload images using Multer & Cloudinary</p>
+              <a class="view_btn" href="https://image-uploader-no8y.onrender.com/" target="_blank">
                 View Project
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
           </div>
 
+          <!-- AUTH SYSTEM -->
           <div class="work_card">
-            <img
-              src="./images/cloud_image.png"
-              alt="Full Stack Auth + File Upload"
-            />
-            <div class="work_card_info">
-              <h4>☁️ Full Stack Auth + File Upload</h4>
-              <p>
-                Authentication & file upload system with Multer + Cloudinary
-                integration.
-              </p>
-              <a
-                class="view_btn"
-                href="https://full-stack-auth-file-upload.onrender.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+            <img src="./images/cloud_image.png" />
+            <div>
+              <h4>☁️ Auth + File Upload</h4>
+              <p>JWT Auth + File Upload System</p>
+              <a class="view_btn" href="https://full-stack-auth-file-system.onrender.com/" target="_blank">
                 View Project
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
           </div>
 
+          <!-- CONTACT API -->
           <div class="work_card">
-            <img src="./images/apiimage.png" alt="Contact API" />
-            <div class="work_card_info">
+            <img src="./images/apiimage.png" />
+            <div>
               <h4>📇 Contact API</h4>
-              <p>
-                Secure contact management API with JWT login & MongoDB
-                integration.
-              </p>
-              <a
-                class="view_btn"
-                href="https://contact-management-app-8wr9.onrender.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <p>Secure contact API with JWT</p>
+              <a class="view_btn" href="https://contact-management-app-dc2i.onrender.com/" target="_blank">
                 View Project
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
           </div>
 
+          <!-- ECOMMERCE -->
           <div class="work_card">
-            <img src="./images/apiimage.png" alt="E-Commerce API" />
-            <div class="work_card_info">
+            <img src="./images/apiimage.png" />
+            <div>
               <h4>🛒 E-Commerce API</h4>
-              <p>
-                REST API with authentication & JWT authorization using Node.js +
-                MongoDB.
-              </p>
-              <a
-                class="view_btn"
-                href="https://e-commerce-api-3-sts1.onrender.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <p>REST API with authentication</p>
+              <a class="view_btn" href="https://e-commerce-api-v6pl.onrender.com/" target="_blank">
                 View Project
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- ===== CONTACT ===== -->
     <section id="contact" class="fade-in">
       <div class="container">
         <h3>📞 Contact Me</h3>
-        <p class="center">
-          Let’s build something amazing together! Drop me a message ✨
-        </p>
+
         <div class="contact_links">
-          <a
-            href="https://www.linkedin.com/in/prince-bharti-8ba534397/"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
-          >
-          <a
-            href="https://github.com/prince1102"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="fa-brands fa-github"></i> GitHub</a
-          >
-          <a href="mailto:Princebhartip11@gmail.com"
-            ><i class="fa-solid fa-envelope"></i> Email</a
-          >
-          <a href="tel:9953504232"
-            ><i class="fa-solid fa-phone"></i> 9953504232</a
-          >
+          <a href="https://www.linkedin.com/in/prince-bharti-8ba534397/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+
+          <a href="https://github.com/prince1102" target="_blank">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+
+          <a href="https://www.facebook.com/share/1DP53PwcAi/" target="_blank">
+            <i class="fa-brands fa-facebook"></i> Facebook
+          </a>
+
+          <a href="https://www.instagram.com/dailyvlog_with_prince" target="_blank">
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </a>
+
+          <a href="mailto:Princebhartip11@gmail.com">
+            <i class="fa-solid fa-envelope"></i> Email
+          </a>
+
+          <a href="tel:9953504232">
+            <i class="fa-solid fa-phone"></i> 9953504232
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ===== FOOTER ===== -->
     <footer>
-      <div class="container">
-        <p>© 2025 Prince Bharti | Made with ❤️ Me</p>
-      </div>
+      <p>© 2026 Prince Bharti | Made with ❤️</p>
     </footer>
 
-    <!-- JS -->
     <script src="script.js"></script>
   </body>
 </html>
